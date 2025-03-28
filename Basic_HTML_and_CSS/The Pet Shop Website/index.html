@@ -1,96 +1,137 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>The Pet Shop</title>
-        <meta charset="utf-8">
-    </head>
-    <blockquote cite="https://www.azquotes.com/quotes/topics/animal-rescue.html">"The greatness of a nation can be judged by the way its animals are treated."<br> ~ Mahatma Gandhi</blockquote>
-    <body>
-        <!--NAVBAR-->
-        <nav>
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-            </ul>
-            <ul>
-                <a href="#cat"><li>Cats & Kittens</li></a>
-                <a href="#dog"><li>Dogs & Puppies</li></a>
-                <a href="#rabbit"><li>Rabbits</li></a>
-                <a href="#guineapig"><li>Guinea Pigs</li></a>
-                <a href="#fish"><li>Fish</li></a>
-                <a href="#raccoon"><li>Raccoons</li></a>
-                <a href="#videos"><li>Videos</li></a>
-            </ul>
-        </nav>
-        <!--HEADER-->
-        <header>
+<html lang="en">
+
+<head>
+    <title>The Pet Shop</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+
+<body>
+    <!--NAVBAR-->
+    <nav class="nav-bar">
+        <ul id="nav-border" <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+        <ul>
+            <a href="#cat">
+                <li>Cats & Kittens</li>
+            </a>
+            <a href="#dog">
+                <li>Dogs & Puppies</li>
+            </a>
+            <a href="#rabbit">
+                <li>Rabbits</li>
+            </a>
+            <a href="#guineapig">
+                <li>Guinea Pigs</li>
+            </a>
+            <a href="#fish">
+                <li>Fish</li>
+            </a>
+            <a href="#raccoon">
+                <li>Raccoons</li>
+            </a>
+            <a href="#videos">
+                <li>Videos</li>
+            </a>
+        </ul>
+    </nav>
+    <!--HEADER-->
+    <header>
+        <div>
+            <h1 class="animate-text">Welcome to The Pet Shop!</h1>
+            <blockquote cite="https://www.azquotes.com/quotes/topics/animal-rescue.html">"The greatness of a nation can be judged by
+                the way its animals are treated."<br> ~ Mahatma Gandhi</blockquote>
+        </div>
+    </header>
+    <!--PET IMAGES-->
+    <section>
+        <div class="container">
+            <h2>Choose a Pet!</h2>
             <div>
-                <h1>Welcome to The Pet Shop!</h1>
-            </div>
-        </header>
-        <!--PET IMAGES-->
-        <section>
-            <div>
-                <h2>Choose a Pet!</h2>
-                <div>
-                    <!--CAT IMAGE-->
-                    <div id="cat">
+                <!--CAT IMAGE-->
+                <div id="cat" class="column">
+                    <div class="image-container">
                         <h3>Cats & Kittens</h3>
                         <img src="images/Isadora_1.jpg" alt="Picture of cat">
+                        <div class="overlay"></div>
                     </div>
-                    <!--DOG IMAGE-->
-                    <div id="dog">
+                </div>
+                <!--DOG IMAGE-->
+                <div id="dog" class="column">
+                    <div class="image-container">
                         <h3>Dogs & Puppies</h3>
                         <img src="images/EskimoDog.jpg" alt="Picture of dog">
+                        <div class="overlay"></div>
                     </div>
-                    <!--RABBIT IMAGE-->
-                    <div id="rabbit">
+                </div>
+                <!--RABBIT IMAGE-->
+                <div id="rabbit" class="column">
+                    <div class="image-container">
                         <h3>Rabbits</h3>
                         <img src="images/Rabbit.jpg" alt="Picture of rabbit">
+                        <div class="overlay"></div>
                     </div>
-                    <!--GUINEA PIG IMAGE-->
-                    <div id="guineapig">
+                </div>
+                <!--GUINEA PIG IMAGE-->
+                <div id="guineapig" class="column">
+                    <div class="image-container">
                         <h3>Guinea Pigs</h3>
                         <img src="images/guineapig.jpg" alt="Picture of guinea pig">
+                        <div class="overlay"></div>
                     </div>
-                    <!--FISH IMAGE-->
-                    <div id="fish">
+                </div>
+                <!--FISH IMAGE-->
+                <div id="fish" class="column">
+                    <div class="image-container">
                         <h3>Fish</h3>
                         <img src="images/fish.jpg" alt="Picture of betta fish">
+                        <div class="overlay"></div>
                     </div>
-                    <!--RACCOON IMAGE-->
-                    <div id="raccoon">
+                </div>
+                <!--RACCOON IMAGE-->
+                <div id="raccoon" class="column">
+                    <div class="image-container">
                         <h3>Raccoons</h3><br>
                         <em>Click on the raccoon to learn more about them</em>
                         <img src="images/raccoon.jpg" alt="Picture of raccoon">
+                        <div class="overlay"></div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!--VIDEOS-->
-        <section>
-            <!--DOG VIDEO-->
-            <div id="videos">
-                <h3>Videos</h3>
-                <iframe width="1280" height="720" src="https://www.youtube.com/embed/ng58pNPDDW4"></iframe>
-            </div>
-        </section>
-        <!--FOOTER-->
-        <footer>
-            <table>
-                <tr>
-                    <td>
-                        <p>The Pet Shop! &copy;</p>
-                    </td>
-                    <td>
-                        <p>123 Square Avenue</p>
-                        <p>Portland, OR 97204</p>
-                    </td>
-                    <td>
-                        <p>503-234-3966</p>
-                    </td>
-                </tr>
-            </table>
-        </footer>
-    </body>
+        </div>
+    </section>
+    <!--VIDEOS-->
+    <section>
+        <!--DOG VIDEO-->
+        <div id="videos" class="container">
+            <h3>Videos</h3>
+            <iframe width="1280" height="720" src="https://www.youtube.com/embed/ng58pNPDDW4"></iframe>
+        </div>
+    </section>
+    <!--FOOTER-->
+    <footer>
+        <table>
+            <tr>
+                <td>
+                    <p>The Pet Shop! &copy;</p>
+                </td>
+                <td>
+                    <p>123 Square Avenue</p>
+                    <p>Portland, OR 97204</p>
+                </td>
+                <td>
+                    <p>503-234-3966</p>
+                </td>
+            </tr>
+        </table>
+    </footer>
+</body>
+
 </html>
