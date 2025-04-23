@@ -1,0 +1,25 @@
+.page-font {
+font-family: 'Century Gothic', sans-serif;
+font-size: 20px;
+font-weight: lighter;
+text-align: center;
+}
+
+.input {
+    width: 100px;
+    margin: 12px;
+    border: auto;
+    border-radius: 3px;
+}
+
+.navbar {
+    list-style-type: none;
+}
+
+.footer-text {
+    text-align: center;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+}
