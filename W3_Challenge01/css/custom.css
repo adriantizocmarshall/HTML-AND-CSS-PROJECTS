@@ -1,0 +1,104 @@
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+img{
+    filter: grayscale(100%);
+    border-radius: 30px 30px 30px 30px;
+    overflow: hidden;
+}
+
+footer{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+table, th, td{
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+}
+
+th{
+    background-color: greenyellow;
+}
+
+.container{
+    position: center;
+    text-align: center;
+    color: white;
+}
+
+.centered{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+}
+
+/*The navigation bar*/
+.navbar{
+    overflow: hidden;
+    color: white;
+    font-weight: bold;
+    background-color: greenyellow;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+
+.navbar a{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    background-color: white;
+    color: greenyellow;
+}
+
+/*Main content*/
+.main{
+    margin-top: 30px; /* Add a top margin to avoid content overlay */
+}
+
+.column{
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    height: 300px;
+    width: 100%;
+}
+
+.column a{
+    color: white;
+}
+
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+p{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+p:hover{
+    color: greenyellow;
+}
