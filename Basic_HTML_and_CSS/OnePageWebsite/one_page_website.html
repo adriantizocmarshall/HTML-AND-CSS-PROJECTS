@@ -6,54 +6,103 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="CSS/one_page_website.css">
 </head>
-<div class="page-font">
-    <body>
+<body>
+    <div class="page-font">
         <!--NAVBAR-->
         <nav>
             <ul class="navbar">
                 <a href="#photography">
                     <li>Photography</li>
                 </a>
-                <a href="#filmography">
-                    <li>Filmography</li>
-                </a>
-                <a href="#music">
-                    <li>Music</li>
-                </a>
                 <a href="#performances">
                     <li>Performances</li>
                 </a>
             </ul>
         </nav>
+        
         <!--HEADER-->
         <header>
             <div>
                 <h1>PORTFOLIO</h1>
             </div>
         </header>
-        <!--PET IMAGES-->
-        <section>
+        
+        <!--PHOTOGRAPHY-->
+        <section id="photography">
+            <button onclick="openModal(); currentSlide(1)">Test Lightbox</button>
             <div>
-                <h2>My Work</h2>
-                <div>
-                    <!--PHOTOGRAPHY IMAGE-->
-                    <div id="photography">
-                        <h3>Photography</h3>
-                        <img src="images/Snails01.jpeg" alt="Picture of snails on lemon" width="500px">
+                <!-- Images used to open the lightbox -->
+                <h2>Photography</h2>
+                <div class="row">
+                    <div class="column">
+                        <img src="images/building01.jpg" style="width:100%" onclick="openModal(); currentSlide(1)" class="hover-shadow cursor">
                     </div>
-                    <!--FILMOGRAPHY IMAGE-->
-                    <div id="filmography">
-                        <h3>Filmography</h3>
-                        <img src="images/PiedrasStill01.jpg" alt="Picture of woman carrying a baby" width="500px">
+                    <div class="column">
+                        <img src="images/building02.jpg" style="width:100%" onclick="openModal(); currentSlide(2)" class="hover-shadow cursor">
                     </div>
-                    <!--MUSIC IMAGE-->
-                    <div id="music">
-                        <h3>Music</h3>
-                        <img src="images/Heart01.jpg" alt="Picture of Scott Calvin album cover" width="500px">
+                    <div class="column">
+                        <img src="images/building03.jpg" style="width:100%" onclick="openModal(); currentSlide(3)" class="hover-shadow cursor">
+                    </div>
+                    <div class="column">
+                        <img src="images/building04.jpg" style="width:100%" onclick="openModal(); currentSlide(4)" class="hover-shadow cursor">
+                    </div>
+                </div>
+
+                <!-- The Modal/Lightbox -->
+                <div id="myModal" class="modal">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div class="modal-content">
+                        
+                        <div class="mySlides">
+                            <div class="numbertext">1 / 4</div>
+                            <img src="images/building01.jpg" style="width:100%">
+                        </div>
+                        
+                        <div class="mySlides">
+                            <div class="numbertext">2 / 4</div>
+                            <img src="images/building02.jpg" style="width:100%">
+                        </div>
+                        
+                        <div class="mySlides">
+                            <div class="numbertext">3 / 4</div>
+                            <img src="images/building03.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">4 / 4</div>
+                            <img src="images/building04.jpg" style="width:100%">
+                        </div>
+                        
+                        <!-- Next/previous controls -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        
+                        <!-- Caption text -->
+                        <div class="caption-container">
+                            <p id="caption"></p>
+                        </div>
+
+                        <!-- Thumbnail image controls -->
+                        <div class="column">
+                            <img class="demo" src="images/building01.jpg" style="width:100%" onclick="currentSlide(1)" alt="Reflective building at night with tree illuminated by blue light">
+                        </div>
+
+                        <div class="column">
+                            <img class="demo" src="images/building02.jpg" style="width:100%" onclick="currentSlide(2)" alt="Strips of horizontal yellow lights passing through windows on a building">
+                        </div>
+
+                        <div class="column">
+                            <img class="demo" src="images/building03.jpg" style="width:100%" onclick="currentSlide(3)" alt="Abstract architectural feature with triangular shapes">
+                        </div>
+
+                        <div class="column">
+                            <img class="demo" src="images/building04.jpg" style="width:100%" onclick="currentSlide(4)" alt="Minimalist building cloaked in shades of blue against a monochromatic background">
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+        
         <!--PERFORMANCES-->
         <section>
             <div id="performances">
@@ -65,38 +114,40 @@
                 </iframe>
             </div>
         </section>
-        </section>
+        
         <!--CONTACT-->
         <section>
-            <section>
+            <div>
+                <h3>Get in Touch</h3>
                 <div>
-                    <h3>Get in Touch</h3>
-                    <div>
-                        <form>
-                            <input type="text" placeholder="First Name">
-                            <input type="text" placeholder="Last Name"><br>
-                            <input type="email" placeholder="Email"><br>
-                            <input type="tel" placeholder="Phone Number"><br>
-                            <input type="checkbox" id="Hire">
-                            <label for="Hire">Business inquiry</label><br>
-                            <textarea placeholder="Type message here"></textarea><br>
-                            <input type="submit" value="Submit">
-                        </form>
-                    </div>
+                    <form>
+                        <input type="text" placeholder="First Name">
+                        <input type="text" placeholder="Last Name"><br>
+                        <input type="email" placeholder="Email"><br>
+                        <input type="tel" placeholder="Phone Number"><br>
+                        <input type="checkbox" id="Hire">
+                        <label for="Hire">Business inquiry</label><br>
+                        <textarea placeholder="Type message here"></textarea><br>
+                        <input type="submit" value="Submit">
+                    </form>
                 </div>
-            </section>
-            <!--FOOTER-->
-            <div class="footer-text">
-                <footer>
-                    <table>
-                        <tr>
-                            <td>
-                                <p>Adrian Tizoc Marshall &copy;</p>
-                            </td>
-                        </tr>
-                    </table>
-                </footer>
             </div>
-    </body>
-
+        </section>
+        
+        <!--FOOTER-->
+        <div class="footer-text">
+            <footer>
+                <table>
+                    <tr>
+                        <td>
+                            <p>Adrian Tizoc Marshall &copy;</p>
+                        </td>
+                    </tr>
+                </table>
+            </footer>
+        </div>
+    </div>
+    
+    <script src="JS/one_page_website.js" defer></script>
+</body>
 </html>
